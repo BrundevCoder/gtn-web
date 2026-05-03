@@ -33,17 +33,17 @@ I decided to create this to challenge myself again to make a Guess The Number ga
 Computer:
 ![alt text](images/image.png)
 
-<br\>
+<br/>
 
 Mobile Phone:
-<br\>
+<br/>
 ![alt text](images/phone.png)
-<br\>
+<br/>
 
 Tablet:
-<br\>
+<br/>
 ![alt text](images/tablet.png)
-<br\>
+<br/>
 
 - For some buttons I also preferred something minimalist with solid shadows, while for the range buttons (the ones that are already in place), I preferred to choose colors that indicate the difficulty, with green being easy, yellow medium, and red hard. The number of lives also reflects the difficulty!
 
