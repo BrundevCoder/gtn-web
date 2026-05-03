@@ -25,5 +25,21 @@ I decided to create this to challenge myself again to make a Guess The Number ga
 - `winOrLoseControll(screenType)`: This function takes the `screenType` argument, wich refers to wich screen the code should be applied to. If applied to `winScreen`, it switches the current screen to the victory screen, produces a sound effect, and automatically restarts the game using the `resetGame()` function. The same thing happens to the losing (`loseScreen`), but with a different sound effect and to a different screen.
 - `controllGame()`: This is the main function, it analyzes your guess and checks if it's greater/less than the mystery number and tells the user if the number is greater/less. This function also handles checking if the user won or lost, updates their lives and attempts and displays them, and finally, clears the user input.
 
+## About the design:
+- For the background I preferred a light color, more specifically: `#7187ff`.
+- The fonts used in this projects were: `Changa One` and `monospace` and if none of these fonts are available, `sans-serif` will be displayed.
+- Furthermore, the site is fully responsive, working well one computers, mobile phones, and tablets! So anyone can play without any problem
+
+Computer:
+![alt text](images/image.png)
+
+Mobile Phone:
+![alt text](images/phone.png)
+
+Tablet:
+![alt text](images/tablet.png)
+
+- For some buttons I also preferred something minimalist with solid shadows, while for the range buttons (the ones that are already in place), I preferred to choose colors that indicate the difficulty, with green being easy, yellow medium, and red hard. The number of lives also reflects the difficulty!
+
 ## Things that might help:
 - If you press `Enter` on the guess input, it handles that too! It might even be better to just press `Enter`, it's faster.
