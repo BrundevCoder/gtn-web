@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple guess the number">
+  <link rel="stylesheet" href="style.css">
+  <title>Guess The Number</title>
+</head>
+<body>
+
+  <!-- screens -->
+
+  <!-- Modes Screen -->
+  <div id="modesScreen" class="screen active">
+    <h1 class="title">Guess The Number!</h1>
+    <p class="descp">Select a range</p>
+
+    <div class="range-container">
+      <input disabled min="0" value="0" class="ipt" type="number" name="" id="range1Input">
+      <p>-</p>
+      <input min="0" value="100" class="ipt" type="number" name="" id="range2Input">
+    </div>
+
+    <button class="btn" id="startCustomRangeBtn">Start</button>
+
+    <p class="txt">or</p>
+
+    <div class="selected-ranges-container">
+      <button id="50RangeBtn" class="range-button btn">0-50</button>
+      <button id="100RangeBtn" class="range-button btn">0-100</button>
+      <button id="250RangeBtn" class="range-button btn">0-250</button>
+    </div>
+
+  </div>
+
+  <!-- Main Game Screen -->
+  <div id="mainGameScreen" class="screen">
+    <h1 class="title">Guess The Number!</h1>
+    <h2 class="tip" id="tipsDisplay">Guess a number first!</h2>
+    <p class="lives-left">You have <span id="livesDisplay">0</span> lives left!</p>
+
+    <input placeholder="Your Guess" class="ipt" id="userGuessInput" type="number">
+
+    <button id="tryBtn" class="btn trybtn">Try</button>
+
+    <p>Tries: <span id="triesDisplay">0</span> </p>
+
+  </div>
+
+  <!-- Win Screen -->
+  <div id="winScreen" class="screen win">
+    <h2 style="--c: #da990f" class="win-txt anim-txt">You won!</h2>
+  </div>
+
+  <!-- Lose Screen -->
+  <div id="LoseScreen" class="screen lose">
+    <h2 style="--c: #df1717" class="lose-txt anim-txt">You lost!</h2>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tilt+Warp&family=VT323&display=swap');
+
+:root {
+  --bg-color: #7187ff;
+  --font-color: #fff; 
+  --glass-bg: #ffffff52;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+  font-family: "Changa One", sans-serif;
+  color: var(--font-color);
+}
+
+body {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--bg-color);
+  transition: 500ms ease;
+}
+
+.screen {
+  width: 100%;
+  max-width: 550px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--glass-bg);
+  padding: 1.15rem;
+  border-radius: 12px;
+  box-shadow: inset 0 5px 10px rgba(255, 255, 255, 0.4);
+}
+
+.active {
+  display: flex;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.35rem;
+}
+
+.descp {
+  text-align: center;
+}
+
+.range-container {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.ipt {
+  outline: none;
+  width: 50%;
+  font-family: "Changa One", sans-serif;
+  font-size: 1.25rem;
+  max-width: 250px;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: none;
+  background: #7187ff;
+  box-shadow: 3px 3px 0 #1e3ce49a;
+  text-align: center;
+  color: var(--font-color);
+  transition: 200ms ease;
+}
+
+.ipt:disabled {
+  filter: grayscale(0.5);
+}
+
+.ipt:disabled:hover {
+  cursor: not-allowed;
+}
+
+.ipt::placeholder {
+  color: #0026ff71;
+}
+
+.ipt:focus {
+  background: #505fb6;
+  box-shadow: 3px 3px 0 #1225919a;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  border: none;
+  background: #7187ff;
+  color: #fff;
+  font-family: "Changa One", sans-serif;
+  box-shadow: 3px 3px 0 #1e3ce49a;
+  transition: 50ms linear;
+}
+
+.btn:hover {
+  transform: translateX(2px) translateY(2px);
+  box-shadow: 2px 2px 0 #1e3ce49a;
+}
+
+.btn:active {
+  transform: translateX(3px) translateY(3px);
+  box-shadow: 0px 0px 0 #1e3ce49a;
+}
+
+.txt {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+}
+
+.selected-ranges-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.range-button {
+  padding: 1rem 1.5rem;
+}
+
+.range-button:nth-child(1) {
+  background: #25e41e;
+  box-shadow: 3px 3px 5px #116e0e9a;
+}
+
+.range-button:nth-child(2) {
+  background: #bdc91c;
+  box-shadow: 3px 3px 5px #63690f9a;
+}
+
+.range-button:nth-child(3) {
+  background: #ec1616;
+  box-shadow: 3px 3px 5px #6e0e0e9a;
+}
+
+.tip {
+  text-align: center;
+  margin: 1.25rem 0;
+  font-size: 1.35rem;
+  font-family: monospace, sans-serif;
+  color: #000000;
+}
+
+.lives-left {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.trybtn {
+  margin: 1rem 0;
+}
+
+.win {
+  border: 3px solid #755a00;
+}
+
+.lose {
+  border: 3px solid rgb(226, 9, 9);
+}
+
+.anim-txt {
+  font-size: 2rem;
+  animation: changeColor 1s ease infinite;
+}
+
+/* Animations */
+
+@keyframes changeColor {
+  0%, 100% {color: #fff;}
+  50% {color: var(--c);}
+}
+
+@keyframes changeBg {
+  0%, 100% {color: #fff;}
+  50% {color: var(--c);}
+}
+
+/* REPONSIVENESS */
+
+@media (max-width: 325px) {
+  .title {
+    font-size: 1rem;
+  }
+  .range-container {
+    flex-direction: column;
+  }
+  .ipt {
+    width: 100%;
+    padding: 0.25rem;
+  }
+}
